@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <title>DesignKu - Satu Klik Ribuan Warna</title>
+</head>
+<body>
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <span class="close-button" id="close-button">&times;</span>
+            <img src="admin.jpg" alt="Popup Image">
+        </div>
+    </div>
+    
+    <nav>
+        <div class="logo">
+            <img src="logo.jpg" alt="DesignKu Logo">
+        </div>
+        <div class="burger-menu">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#Beranda">Beranda</a></li>
+            <li><a href="#Layanan">Layanan</a></li>
+            <li><a href="#Designku">Designku</a></li>
+            <li><a href="#Kontak">Kontak</a></li>
+        </ul>
+    </nav>
+    
+
+    <header>
+        <h1 id="Beranda">DesignKu - Satu Klik Ribuan Warna</h1>
+        <section class="intro-button">
+            <button class="cta-button"><a href="https://wa.link/4hlqbo">Hubungi Lebih lanjut</a></button>
+        </section>
+    </header>
+    <h1 id="Designku" class="visimisi">Visi dan Misi Kami</h1>
+    <div id="visi-misi">
+        <p><span class="visi">Visi:</span> Menjadi digital printing yang terdepan secara profesional dan inovatif yang mampu bersaing di bidang digital printing.</p>
+        <p><span class="misi">Misi:</span> Kami memberikan layanan terbaik secara profesional guna mencapai tingat kepuasan tertinggi.</p>
+    </div>
+    
+    
+
+    <h1 id="Layanan" class="section-title">Layanan Kami</h1>
+
+    <section class="products">
+        <div class="product">
+            <img src="kalender.png" alt="Cetak Calender">
+            <h2>Cetak Calender</h2>
+            <p>Deskripsi singkat tentang layanan cetak calender.</p>
+            <a>PROMO 2023</a>
+        </div>
+        <div class="product">
+            <img src="agenda.png" alt="Cetak Agenda">
+            <h2>Cetak Agenda</h2>
+            <p>Deskripsi singkat tentang layanan cetak agenda.</p>
+            <a>PROMO 2023</a>
+        </div>
+        <div class="product">
+            <img src="Brosur.png" alt="Cetak Brosur">
+            <h2>Cetak Brosur</h2>
+            <p>Deskripsi singkat tentang layanan cetak brosur.</p>
+            <a>PROMO 2023</a>
+        </div>
+        <div class="product">
+            <img src="Flyers.png" alt="Cetak Flyers">
+            <h2>Cetak Flyers</h2>
+            <p>Deskripsi singkat tentang layanan cetak flyers.</p>
+            <a>PROMO 2023</a>
+        </div>
+    </section>
+
+    <section class="products">
+    <div class = "product">
+        <img src="Kartu_nama.png" alt="Cetak Kartu Nama">
+        <h2>Cetak Kartu Nama</h2>
+        <p>Deskripsi singkat tentang layanan cetak kartu nama.</p>
+        <a>PROMO 2023</a>
+    </div>
+    <div class="product">
+        <img src="Banner.png" alt="Cetak Banner">
+        <h2>Cetak Banner</h2>
+        <p>Deskripsi singkat tentang layanan cetak banner.</p>
+        <a>PROMO 2023</a>
+    </div>
+    <div class="product">
+        <img src="Stiker.png" alt="Cetak Stiker">
+        <h2>Cetak Stiker</h2>
+        <p>Deskripsi singkat tentang layanan cetak stiker.</p>
+        <a>PROMO 2023</a>
+    </div>
+    <div class="product">
+        <img src="kipas.png" alt="Cetak Kipas">
+        <h2>Cetak Kipas</h2>
+        <p>Deskripsi singkat tentang layanan cetak kipas.</p>
+        <a>PROMO 2023</a>
+    </div>
+    </section>
+    
+
+    <section class="contact-form">
+        <h2 id="Kontak">Kontak Kami</h2>
+        <form id="contact-form" action="https://formspree.io/f/xbjvpovj" method="POST">
+            <input type="text" placeholder="Nama">
+            <input type="email" placeholder="Email">
+            <input type="text" placeholder="Subjek">
+            <textarea placeholder="Pesan"></textarea>
+            <button type="submit">Kirim Pesan</button>
+        </form>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="contact-info">
+                <h3>Hubungi Kami</h3>
+                <p>Alamat: Jl. Contoh No. 123</p>
+                <p>Email: info@designku.com</p>
+                <p>Telepon: (123) 456-7890</p>
+            </div>
+            <div class="social-links">
+                <h3>Temui Kami di Sosial Media</h3>
+                <div class="social-links">
+                    <i class="fab fa-facebook"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-twitter"></i>
+                </div>                
+            </div>
+        </div>
+        <br>
+        <p>&copy; 2023 DesignKu. Hak Cipta Dilindungi.</p>
+    </footer>
+
+    <script>
+        const popup = document.getElementById('popup');
+        const closeButton = document.getElementById('close-button');
+
+        // Show the popup when the page loads
+        window.addEventListener('load', function() {
+            popup.style.display = 'block';
+        });
+
+        // Close the popup when the close button is clicked
+        closeButton.addEventListener('click', function() {
+            popup.style.display = 'none';
+        });
+    </script>
+
+    <script>
+        const burgerMenu = document.querySelector('.burger-menu');
+        const navLinks = document.querySelector('.nav-links');
+        burgerMenu.addEventListener('click', () => {
+        navLinks.classList.toggle('active');
+});
+    </script>
+
+    <script>
+        // Script untuk menangani klik navbar
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+
+        const targetId = this.getAttribute('href').substring(1);
+        const targetElement = document.getElementById(targetId);
+        const offset = 250; // Jarak dari atas halaman
+
+        window.scrollTo({
+            top: targetElement.offsetTop - offset,
+            behavior: 'smooth'
+        });
+    });
+});
+
+    </script>
+
+    <script src="kontak.js"></script>
+</body>
+</html>
